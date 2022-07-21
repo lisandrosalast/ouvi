@@ -1,0 +1,50 @@
+/*@font-face {
+	font-family: 'Conv_FiraSansCondensed-Regular';
+	src: url('./fonts/FiraSansCondensed-Regular.eot');
+	src: local('?'), url('./fonts/FiraSansCondensed-Regular.woff') format('woff'), url('./fonts/FiraSansCondensed-Regular.ttf') format('truetype'), url('./fonts/FiraSansCondensed-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}*/
+
+@font-face {
+	font-family: 'SolaireDT-Regular';
+	src: url('./fonts/SolaireDT-Regular.eot');
+	src: local('?'), url('./fonts/SolaireDT-Regular.woff') format('woff'), url('./fonts/SolaireDT-Regular.ttf') format('truetype'), url('./fonts/SolaireDT-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {font-family: SolaireDT-Regular, sans-serif /*'Conv_FiraSansCondensed-Regular'*/; font-size: 18px; background-color: #cccccc;}
+h1 {font-size: 30px;} h2 {font-size: 26px;} h3 {font-size: 22px;} h4 {font-size: 18px;} h1, h2, h3, h4 {margin: 0;} p {margin: 15px 0;}
+a:link, a:visited {color: #6a2627; text-decoration: none;} a:hover, a:active {color: #6a2627; text-decoration: underline;}
+a:link div, a:visited div {color: #000000; text-decoration: none;} a:hover div, a:active div {color: #6a2627; text-decoration: none;}
+img, a:link img, a:visited img, a:hover img, a:active img {border-color: #000000;}
+textarea, select, #text {padding: 5px 1%; font-family: sans-serif; font-size: 18px; background: #ffffff; border: solid 1px #6a2627;}
+button, #submit, #reset {padding: 10px; font-family: sans-serif; font-size: 18px;}
+ul {list-style-type: none; margin: 0; padding: 0;}
+.resaltar {background-color: #ffe500;} :focus {outline-color: #000000;}
+.general {position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; min-width: 700px; max-width: 1280px; padding: 0; background-color: #ffffff;}
+#cabecita {display:none}
+#cabeza {position: fixed; z-index: 1000; float: left; width: 100%; text-align: right; background-color: #dddddd; color:#000000; /*border-bottom: solid 3px #666666;*/} #cabeza img {float: left; padding: 5px; margin: 0px 10px}
+#cabeza_alt {position: fixed; background: rgba(255,255,255,.85); width: 100%; text-align: right; left: 0; top: 0; z-index: 1000;} #cabeza_alt img {float:left; padding:2px;}
+#cabeza a:hover img, #cabeza a:active img, #cabeza_alt a:hover img, #cabeza_alt a:active img {/*background: #6a2627*/;}
+#nav, #nav_alt {float: right; position: absolute; bottom: 0; right: 0;}
+#nav li, #nav_alt li {float: right; padding: 10px;}  #nav li, #nav_alt li {color: #000000;}
+#nav a:link li, #nav a:visited li, #nav_alt a:link li, #nav_alt a:visited li {text-decoration: none;}
+#nav a:hover li, #nav a:active li, #nav_alt a:hover li, #nav_alt a:active li {background-color: #6a2627; color:#ffffff; text-decoration: none;}
+.a10 {width: 8%;} .a20 {width: 18%;} .a40 {width: 38%;} .a60 {width: 58%;} .a80 {width: 78%;} .a25 {width: 23%;} .a50, .a50_na {width: 48%;} .a75 {width: 73%;} .a33, .a33_na {width: 31.3%;} .a67 {width: 64.7%;} .a100 {width: 98%;}
+.a10, .a20, .a40, .a60, .a80, .a25, .a50, .a50_na, .a75, .a33, .a33_na, .a67, .a100 {float: left; margin: 5px 1%; padding: 0;}
+.a900 {clear: both; width: 900px; margin: 5px auto; padding: 0.5%;} .full {float:left; width: 100%; margin: 0;}
+.a200 {float:left; width: 200px; margin: 5px; padding: 0;}
+#pie {float: left; width: 100%; background-color: #735ea9; color: #ffffff; border-top: solid 3px #735ea9}
+#pie a:link, #pie a:visited {color: #ffffff; text-decoration: none;} #pie a:hover, #pie a:active {color: #ffffff; text-decoration: underline;}
+.movil {display: none;} .solopc {display: block}
+#encima {z-index: 500; position: fixed; right: 0; top: 0; width: 100%; height: 100%; text-align: center; font-size: 40px; color: #ffffff; background: rgba(0,0,0,.8)}
+@media screen and (max-width: 699px) {.general {min-width: 140px;}
+#nav {clear: both; position: static;}
+.solopc {display: none} .movil {display: block} .ajustar {width: 50%; margin-right: 1%;} #cabeza img {height: 40px;}
+.a10, .a20, .a40, .a60, .a80, .a25, .a50, .a75, .a33, .a67, .a100, .a900 {width: 98%;}
+body, #pie, #nav {font-size: 16px;} h1 {font-size: 22px;}  h2 {font-size: 20px;} h3 {font-size: 18px;} h4 {font-size: 16px;} #cabecita {display: none}}
+@media screen and (min-width: 1281px) {.general {position: static; margin: auto; clear: both; width: 1280px;} body {background-color: #aaaaaa;} #cabeza {width: 1280px} #cabecita {display: block ;position: fixed; float: left; width: 1280px; height: 20px; top: 0px; z-index: 800; background-color: #aaaaaa;}}
+/*OCULTAR PROPAGANDA*/
+img[alt='www.000webhost.com']{display:none !important}
