@@ -1,7 +1,0 @@
-User-agent: *
-Disallow: /vip/
-Disallow: /servicios/
-Disallow: /servicio/
-Disallow: /tutoriales/
-Disallow: /contenido/
-Sitemap: http://solusalas.com.ve/sitemap.xml
