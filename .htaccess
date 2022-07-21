@@ -1,0 +1,22 @@
+# Paginas de error
+
+# Redireccionar paginas
+
+php_value display_errors Off
+php_flag magic_quotes 1
+php_flag magic_quotes_gpc 1
+php_value mbstring.http_input auto
+php_value date.timezone America/La_Paz
+php_flag register_globals 1
+
+# UTF-8
+AddDefaultCharset utf-8
+
+#URLs Amigables
+RewriteEngine on
+RewriteBase /ouvi/
+RewriteRule ^(.+)_$ index.php?i=articulo&url=$1 [NC,L]
+RewriteRule ^([^\.]+)$ index.php?i=$1 [NC,L]
+
+# expiracion de 1 semana para archivos estaticos 3600*24*7
+php_value session.auto_start 1
